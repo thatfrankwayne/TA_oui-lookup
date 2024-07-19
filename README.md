@@ -21,7 +21,8 @@ src_mac = *
 
 ## Prerequisites and Dependencies
 
-This TA is installed on the search tier only.
+This TA is installed on the search tier only. 
+It can be installed directly on a stand-alone search head or distributed to a cluster with a deployer.
 
 Search heads with this TA should have access to (the IEEE website) *standards-oui.ieee.org* on port 443/TCP to download updates to the lookup table.
 
@@ -33,4 +34,4 @@ The TA was developed by Frank Wayne.
 
 Contact [the developer](mailto:frank.wayne@northwestern.edu?subject=TA_oui-lookup) with questions, bug reports or change requests. You can also refer or contribute to the [GitHub repository](https://github.com/thatfrankwayne/TA_oui-lookup).
 
-[^1] A well-formed MAC address is a set of 12 hexadecimal digits with digit pairs optionally separated by a hyphen or a colon.
+[^1]: A well-formed MAC address is a set of 12 hexadecimal digits with digit pairs optionally separated by a hyphen or a colon.
