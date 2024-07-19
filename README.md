@@ -11,7 +11,7 @@ It provides macros for Splunk to be use at search-time to lookup the organizatio
 
 For example, a given search returns events with a field called `src_mac`.
 The `src_mac` field contains a well-formed MAC address[^1].
-The emphasized lines below will return a field `vendor` that contains the registered manufacturer of the device with that MAC address.
+The emphasized line below will return a field `vendor` that contains the registered manufacturer of the device with that MAC address.
 
 <pre>
 src_mac = *
