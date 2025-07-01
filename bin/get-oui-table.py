@@ -5,11 +5,14 @@ import urllib.request
 
 
 OUI_URL = "https://standards-oui.ieee.org"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Trailer/93.3.8652.5"
 
 
 def main():
+    req = urllib.request.Request(OUI_URL)
+    req.add_header("User-agent", USER_AGENT)
     try:
-        page = urllib.request.urlopen(OUI_URL, timeout=15)  # get OUI list
+        page = urllib.request.urlopen(req, timeout=15)
     except urllib.error.HTTPError as e:
         sys.stderr.write(f"HTTP error {e.code} opening \"{OUI_URL}\"")
         exit(1)
