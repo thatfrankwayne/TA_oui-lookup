@@ -1,7 +1,7 @@
 # TA_oui-lookup
 
 []
-access = read : [ admin, sc_admin ], write : [ admin, sc_admin ]
+access = read : [ * ], write : [ admin, sc_admin ]
 
 [commands/getouitable]
 access = read : [ admin, sc_admin ], write : [ admin, sc_admin ]
